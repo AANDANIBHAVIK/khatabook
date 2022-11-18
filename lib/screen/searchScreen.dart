@@ -19,6 +19,7 @@ class _Search_ScreenState extends State<Search_Screen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blue.shade100,
           automaticallyImplyLeading: false,
           title: TextField(
             onChanged: (value) {
@@ -47,7 +48,7 @@ class _Search_ScreenState extends State<Search_Screen> {
                   Get.to(Customer_Screen());
                 },
                 child: ListTile(
-                  title: Text("${homeController.bookList[index]["name"]}"),
+                  title: Text("${homeController.bookList[index]["name"]}",style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
               );
             },

@@ -26,7 +26,7 @@ class _Add_ScreenState extends State<Add_Screen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
           title: Text("Add Customer"),
         ),
         body: Padding(
@@ -44,7 +44,7 @@ class _Add_ScreenState extends State<Add_Screen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide(color: Colors.redAccent.shade100),
+                    borderSide: BorderSide(color: Colors.blueAccent.shade100),
                   ),
                 ),
               ),
@@ -62,7 +62,7 @@ class _Add_ScreenState extends State<Add_Screen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide(color: Colors.redAccent.shade100),
+                    borderSide: BorderSide(color: Colors.blueAccent.shade100),
                   ),
                 ),
               ),
@@ -87,7 +87,7 @@ class _Add_ScreenState extends State<Add_Screen> {
                     height: 40,
                     width: 120,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.redAccent.shade100,),
+                      style: ElevatedButton.styleFrom(primary: Colors.blueAccent.shade100,),
                       onPressed: () {
                         db.insertData(txtname.text, txtmobile.text);
                         getData();

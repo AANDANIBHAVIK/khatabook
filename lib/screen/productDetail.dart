@@ -40,7 +40,7 @@ class _Product_DetailsState extends State<Product_Details> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
           elevation: 0,
           title: Text("Entry Details"),
         ),
@@ -62,7 +62,7 @@ class _Product_DetailsState extends State<Product_Details> {
                         height: 60,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.redAccent.shade100,
+                          color: Colors.blueAccent.shade100,
                             border: Border(bottom: BorderSide(color: Colors.grey.shade200,width: 2))
                         ),
                         child: Padding(
@@ -87,7 +87,7 @@ class _Product_DetailsState extends State<Product_Details> {
                         height: 70,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.redAccent.shade100,
+                          color: Colors.blueAccent.shade100,
                             border: Border(bottom: BorderSide(color: Colors.grey.shade200,width: 2),
                             )
                         ),
@@ -105,7 +105,7 @@ class _Product_DetailsState extends State<Product_Details> {
                       Container(
                         height: 60,
                         width: double.infinity,
-                        color: Colors.redAccent.shade100,
+                        color: Colors.blueAccent.shade100,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 15,right: 15),
                           child: Row(
@@ -207,7 +207,7 @@ class _Product_DetailsState extends State<Product_Details> {
                                 },
                                 child: Text("EDIT"),
                                 style: ElevatedButton.styleFrom(
-                                    primary: Colors.redAccent.shade100),
+                                    primary: Colors.blueAccent.shade100),
                               ),
                               SizedBox(
                                 width: 10,

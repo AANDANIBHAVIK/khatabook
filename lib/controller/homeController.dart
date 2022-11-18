@@ -12,6 +12,7 @@ class HomeController extends GetxController
   ProductModel? detaildata;
   RxString fdate = "".obs;
   RxList productList = [].obs;
+  RxList productList1 = [].obs;
   RxInt totalsum = 0.obs;
   RxInt pendingsum = 0.obs;
   RxInt greensum = 0.obs;
@@ -47,21 +48,21 @@ class HomeController extends GetxController
 
   void homeaddition() async{
     DbHelper db = DbHelper();
-    productList.value = await db.productreadData();
+    productList1.value = await db.productreadData();
 
 
     int index = 0;
     greensum.value=0;
     redsum.value=0;
 
-    for(index=0;index<productList.length;index++) {
-      if (productList[index]["payment_status"] == 0) {
+    for(index=0;index<productList1.length;index++) {
+      if (productList1[index]["payment_status"] == 0) {
         greensum.value = greensum.value +
-            int.parse(productList[index]["amount"]);
+            int.parse(productList1[index]["amount"]);
       }
       else {
         redsum.value = redsum.value +
-            int.parse(productList[index]["amount"]);
+            int.parse(productList1[index]["amount"]);
       }
     }
   }

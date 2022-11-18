@@ -42,7 +42,7 @@ class _Customer_ScreenState extends State<Customer_Screen> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
           title: Text("${homeController.datapick!.name}"),
           actions: [
             IconButton(
@@ -59,7 +59,7 @@ class _Customer_ScreenState extends State<Customer_Screen> {
             Container(
               height: 150,
               width: double.infinity,
-              color: Colors.redAccent.shade100,
+              color: Colors.blueAccent.shade100,
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Column(

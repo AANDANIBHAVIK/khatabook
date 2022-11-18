@@ -39,7 +39,7 @@ class _Got_PaymentState extends State<Got_Payment> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
           title: Text("Add Payment"),
         ),
         body: SingleChildScrollView(
@@ -59,7 +59,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.redAccent.shade100),
+                      borderSide: BorderSide(color: Colors.blueAccent.shade100),
                     ),
                   ),
                 ),
@@ -79,7 +79,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.redAccent.shade100),
+                      borderSide: BorderSide(color: Colors.blueAccent.shade100),
                     ),
                   ),
                 ),
@@ -104,7 +104,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.redAccent.shade100),
+                      borderSide: BorderSide(color: Colors.blueAccent.shade100),
                     ),
                   ),
                 ),
@@ -129,7 +129,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.redAccent.shade100),
+                      borderSide: BorderSide(color: Colors.blueAccent.shade100),
                     ),
                   ),
                 ),
@@ -151,7 +151,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                   },
                   child: Text("Save"),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.redAccent.shade100),
+                      primary: Colors.blueAccent.shade100),
                 )
               ],
             ),

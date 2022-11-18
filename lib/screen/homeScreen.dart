@@ -55,7 +55,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               Get.to(Search_Screen());
             }, icon: Icon(Icons.search)),
           ],
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
         ),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -66,7 +66,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                   height: 175,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Colors.redAccent.shade100),
+                      color: Colors.blueAccent.shade100),
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
@@ -313,7 +313,7 @@ class _Home_ScreenState extends State<Home_Screen> {
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
-          backgroundColor: Colors.redAccent.shade100,
+          backgroundColor: Colors.blueAccent.shade100,
           onPressed: () {
             Get.to(() => Add_Screen());
           },
