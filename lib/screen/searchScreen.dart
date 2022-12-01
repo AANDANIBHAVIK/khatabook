@@ -19,6 +19,7 @@ class _Search_ScreenState extends State<Search_Screen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          elevation: 0,
           backgroundColor: Colors.blue.shade100,
           automaticallyImplyLeading: false,
           title: TextField(

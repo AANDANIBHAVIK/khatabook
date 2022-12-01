@@ -30,6 +30,8 @@ class _Home_ScreenState extends State<Home_Screen> {
 
   void getData() async {
     homeController.bookList.value = await db.readData();
+
+
     homeController.productList.value = await db.productreadData();
     homeController.homeaddition();
     homeController.addition();

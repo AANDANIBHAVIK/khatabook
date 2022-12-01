@@ -35,6 +35,8 @@ class _Add_ScreenState extends State<Add_Screen> {
             children: [
               TextField(
                 controller: txtname,
+                textInputAction: TextInputAction.next,
+
                 decoration: InputDecoration(
                   hintText: "Name",
                   border: OutlineInputBorder(),
@@ -53,6 +55,8 @@ class _Add_ScreenState extends State<Add_Screen> {
               ),
               TextField(
                 controller: txtmobile,
+                textInputAction: TextInputAction.next,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   hintText: "Mobile No.",
                   border: OutlineInputBorder(),

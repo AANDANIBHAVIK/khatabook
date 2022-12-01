@@ -54,7 +54,7 @@ class _Got_PaymentState extends State<Got_Payment> {
                     hintText: "Product Name",
                     border: OutlineInputBorder(),
                     icon: Icon(
-                      Icons.people_alt_rounded,
+                      Icons.add_shopping_cart,
                       color: Colors.grey,
                     ),
                     focusedBorder: OutlineInputBorder(

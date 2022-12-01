@@ -29,7 +29,7 @@ class _Gave_PaymentState extends State<Gave_Payment> {
 
   void getData() async {
     homeController.productList.value =
-    await db.productreadData(id:homeController.datapick!.id!);
+        await db.productreadData(id: homeController.datapick!.id!);
     homeController.addition();
     homeController.homeaddition();
   }
@@ -54,7 +54,7 @@ class _Gave_PaymentState extends State<Gave_Payment> {
                     hintText: "Product Name",
                     border: OutlineInputBorder(),
                     icon: Icon(
-                      Icons.people_alt_rounded,
+                      Icons.add_shopping_cart,
                       color: Colors.grey,
                     ),
                     focusedBorder: OutlineInputBorder(
@@ -94,7 +94,7 @@ class _Gave_PaymentState extends State<Gave_Payment> {
                     hintText: "Date",
                     border: OutlineInputBorder(),
                     icon: InkWell(
-                      onTap: (){
+                      onTap: () {
                         datespikerDilog();
                       },
                       child: Icon(
@@ -119,7 +119,7 @@ class _Gave_PaymentState extends State<Gave_Payment> {
                     hintText: "Time",
                     border: OutlineInputBorder(),
                     icon: InkWell(
-                      onTap: (){
+                      onTap: () {
                         timepickerdilog();
                       },
                       child: Icon(
@@ -181,16 +181,15 @@ class _Gave_PaymentState extends State<Gave_Payment> {
 
   void timepickerdilog() async {
     TimeOfDay? t1 =
-    await showTimePicker(context: context, initialTime: TimeOfDay.now());
+        await showTimePicker(context: context, initialTime: TimeOfDay.now());
 
     if (t1 != null) {
       DateTime parsedtime =
-      DateFormat.jm().parse(t1.format(context).toString());
+          DateFormat.jm().parse(t1.format(context).toString());
 
       String formetdtime = DateFormat('hh:mm').format(parsedtime);
 
       ctxttime.text = formetdtime;
     }
   }
-
 }

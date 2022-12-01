@@ -118,7 +118,7 @@ class _History_ScreenState extends State<History_Screen> {
                                   Container(
                                     width: 70,
                                     alignment: Alignment.center,
-                                    color: Colors.red,
+                                    color: Colors.red.shade700,
                                     child: homeController.productList[index]
                                     ['payment_status'] ==
                                         1

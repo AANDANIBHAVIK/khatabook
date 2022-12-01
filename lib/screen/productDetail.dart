@@ -174,22 +174,6 @@ class _Product_DetailsState extends State<Product_Details> {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextField(
-                            controller: utxttime,
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              hintText: "Time",
-                              prefixIcon: InkWell(
-                                onTap: () {
-                                  timepickerdilog();
-                                },
-                                child: Icon(Icons.timer),
-                              ),
-                            ),
-                          ),
                           Row(
                             children: [
                               ElevatedButton(
